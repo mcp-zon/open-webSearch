@@ -9,6 +9,11 @@ on:
 
 jobs:
   build-and-push:
+    permissions:
+      packages: write
+      attestations: write
+      deployments: write
+      contents: read
     runs-on: ubuntu-latest
 
     steps:
